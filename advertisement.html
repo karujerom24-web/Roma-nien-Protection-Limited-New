@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roma-Nien Protection Limited | Professional Advertisement</title>
+  <meta name="description" content="Roma-Nien Protection Limited — Powerful facility & asset protection. Contact Managing Director Ismael Karu.">
+  <style>
+    :root {
+      --navy: #1A365D;
+      --navy-dark: #0F2942;
+      --navy-mid: #2A4365;
+      --maroon: #8B1A1A;
+      --maroon-dark: #6B1212;
+      --gold: #D69E2E;
+      --gold-soft: #FEFCBF;
+      --white: #FFFFFF;
+      --off-white: #F7FAFC;
+      --light-gray: #EDF2F7;
+      --text: #1A202C;
+      --muted: #4A5568;
+      --border: #E2E8F0;
+      --radius: 12px;
+      --shadow: 0 8px 32px rgba(26, 54, 93, 0.12);
+      --shadow-lg: 0 16px 48px rgba(26, 54, 93, 0.18);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: linear-gradient(160deg, #0F2942 0%, #1A365D 45%, #2A4365 100%);
+      min-height: 100vh;
+      line-height: 1.6;
+      padding: 32px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ad-card {
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+      max-width: 720px;
+      width: 100%;
+      overflow: hidden;
+      border-top: 6px solid var(--maroon);
+    }
+
+    /* Header band */
+    .ad-header {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+      padding: 36px 40px 28px;
+      text-align: center;
+      position: relative;
+    }
+
+    .ad-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--maroon), var(--gold), var(--maroon));
+    }
+
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+      background: var(--white);
+      border-radius: 50%;
+      padding: 10px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .company-name {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .tagline {
+      font-size: 0.95rem;
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* Body */
+    .ad-body {
+      padding: 36px 40px 28px;
+    }
+
+    .power-line {
+      text-align: center;
+      font-family: Georgia, serif;
+      font-size: 1.35rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .power-line em {
+      color: var(--maroon);
+      font-style: italic;
+    }
+
+    .intro {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.98rem;
+      max-width: 520px;
+      margin: 0 auto 28px;
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .highlight {
+      background: var(--off-white);
+      border-left: 4px solid var(--maroon);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 14px 16px;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .highlight strong {
+      display: block;
+      color: var(--navy);
+      font-size: 0.88rem;
+      margin-bottom: 2px;
+    }
+
+    /* Director section */
+    .director-section {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .director-section::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 140px;
+      height: 140px;
+      background: rgba(214, 158, 46, 0.12);
+      border-radius: 50%;
+    }
+
+    .director-label {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .director-name {
+      font-family: Georgia, serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .director-details {
+      display: grid;
+      gap: 12px;
+    }
+
+    .detail-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.98rem;
+    }
+
+    .detail-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: rgba(214, 158, 46, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+
+    .detail-row a {
+      color: var(--gold-soft);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .detail-row a:hover {
+      border-bottom-color: var(--gold);
+    }
+
+    .detail-label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.65);
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    /* Footer */
+    .ad-footer {
+      background: var(--light-gray);
+      padding: 18px 40px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    .ad-footer strong {
+      color: var(--navy);
+    }
+
+    /* Responsive */
+    @media (max-width: 560px) {
+      body { padding: 16px 12px; }
+      .ad-header { padding: 28px 24px 22px; }
+      .ad-body { padding: 28px 24px 22px; }
+      .director-section { padding: 22px 20px; }
+      .company-name { font-size: 1.45rem; }
+      .power-line { font-size: 1.15rem; }
+      .highlights { grid-template-columns: 1fr; }
+      .logo-wrap { width: 90px; height: 90px; }
+      .ad-footer { padding: 14px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <article class="ad-card">
+
+    <!-- Header with Logo -->
+    <header class="ad-header">
+      <div class="logo-wrap">
+        <img src="logo.png" alt="Roma-Nien Protection Limited Logo">
+      </div>
+      <h1 class="company-name">Roma-Nien Protection Limited</h1>
+      <p class="tagline">Facility &amp; Asset Protection</p>
+    </header>
+
+    <!-- Main content -->
+    <div class="ad-body">
+      <p class="power-line">Powerful Protection. <em>Outstanding Performance.</em></p>
+      <p class="intro">
+        Professional, disciplined facility and asset protection for commercial, industrial and high-value sites across Papua New Guinea.
+      </p>
+
+      <div class="highlights">
+        <div class="highlight">
+          <strong>Prevention-First</strong>
+          Intelligence-led security that stops incidents before they start
+        </div>
+        <div class="highlight">
+          <strong>Trained Officers</strong>
+          Uniformed, accountable protective staff with clear procedures
+        </div>
+        <div class="highlight">
+          <strong>24/7 Capability</strong>
+          Rapid response and continuous site vigilance
+        </div>
+        <div class="highlight">
+          <strong>Measurable Results</strong>
+          Documented reporting and clear return on security investment
+        </div>
+      </div>
+
+      <!-- Managing Director -->
+      <div class="director-section">
+        <div class="director-label">Managing Director</div>
+        <div class="director-name">Ismael Karu</div>
+        <div class="director-details">
+          <div class="detail-row">
+            <div class="detail-icon">📞</div>
+            <div>
+              <span class="detail-label">Phone / Mobile</span>
+              <a href="tel:+67573475422">(675) 7347 5422</a>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-icon">✉</div>
+            <div>
+              <span class="detail-label">Email</span>
+              <a href="mailto:ismaelkaru@gmail.com">Ismaelkaru@gmail.com</a>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-icon">📍</div>
+            <div>
+              <span class="detail-label">Location</span>
+              Lae, 411, Morobe Province<br>Papua New Guinea
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="ad-footer">
+      <strong>Roma-Nien Protection Limited</strong> &mdash; Protecting what matters most
+    </footer>
+
+  </article>
+
+</body>
+</html>
